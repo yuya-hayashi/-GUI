@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="500.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="jp.ac.kcg.E19C4019.HR01Controller">
+   <top>
+      <TextField fx:id="tf" onAction="#doSearch" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <TableView fx:id="tv" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="postal" prefWidth="100.40002751350403" text="郵便番号" />
+          <TableColumn fx:id="prefecture" prefWidth="85.99996948242188" text="都道府県名" />
+            <TableColumn fx:id="city" prefWidth="220.80001831054688" text="市区名" />
+            <TableColumn fx:id="city_kana" minWidth="0.0" prefWidth="218.80001831054688" text="シクメイ" />
+            <TableColumn fx:id="town" prefWidth="159.5999755859375" text="町村名" />
+            <TableColumn fx:id="town_kana" prefWidth="181.2000732421875" text="チョウソンメイ" />
+            <TableColumn minWidth="0.0" prefWidth="116.800048828125" text="経度" fx:id="x" />
+            <TableColumn fx:id="y" prefWidth="116.0" text="緯度" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
